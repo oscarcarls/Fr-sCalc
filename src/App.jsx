@@ -28,78 +28,108 @@ return (
 <p className="subtitle">
 Calculate milling area, volume and tonnage
 </p>
-
+<div className="input-grid">
+<div className="field">
 <label>Project Name</label>
 <input
 type="text"
 value={project}
 onChange={(e) => setProject(e.target.value)}
 />
+</div>
 
+<div className="field">
 <label>Customer</label>
 <input
 type="text"
 value={customer}
 onChange={(e) => setCustomer(e.target.value)}
 />
+</div>
 
+<div className="field">
 <label>Date</label>
 <input
 type="date"
 value={date}
 onChange={(e) => setDate(e.target.value)}
 />
+</div>
 
+<div className="field">
 <label>Length (m)</label>
 <input
 type="number"
 value={length}
 onChange={(e) => setLength(e.target.value)}
 />
+</div>
 
+<div className="field">
 <label>Width (m)</label>
 <input
 type="number"
 value={width}
 onChange={(e) => setWidth(e.target.value)}
 />
+</div>
 
+<div className="field">
 <label>Depth (mm)</label>
 <input
 type="number"
 value={depth}
 onChange={(e) => setDepth(e.target.value)}
 />
+</div>
+
+
+<div className="field">
 <label>Transport Distance (km)</label>
 <input
 type="number"
 value={distance}
 onChange={(e) => setDistance(e.target.value)}
 />
+</div>
+
+<div className="field">
 <label>Truck Capacity (ton)</label>
 <input
 type="number"
 value={truckSize}
 onChange={(e) => setTruckSize(e.target.value)}
 />
+</div>
+
+<div className="field">
 <label>Truck Cost (SEK/h)</label>
 <input
 type="number"
 value={truckHourlyCost}
 onChange={(e) => setTruckHourlyCost(e.target.value)}
 />
+</div>
+
+<div className="field">
 <label>Production Rate (ton/h)</label>
 <input
 type="number"
 value={productionRate}
 onChange={(e) => setProductionRate(e.target.value)}
 />
+</div>
+
+<div className="field">
 <label>Round Trip Time (min)</label>
 <input
 type="number"
 value={roundTripTime}
 onChange={(e) => setRoundTripTime(e.target.value)}
 />
+</div>
+
+</div>
 
 
 <button
